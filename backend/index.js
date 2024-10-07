@@ -42,4 +42,8 @@ app.post('/login', async (req, res) => {
     }
 })
 
+app.get('/',(req,res)=>{
+    res.send("Welcome to Chat Backend")
+})
+
 app.listen(3000)
