@@ -9,7 +9,8 @@ app.use(express.json())
 app.use(cors({ 
     origin: ["https://node-js-react-js-chat-app-46yu.vercel.app/"],
     methods: ["POST"],
-    credentials:true
+    credentials:true,
+    allowedHeaders: ["Content-Type", "Authorization"],
 }
 ))
 
