@@ -7,7 +7,7 @@ const app = express()
 dotenv.config()
 app.use(express.json())
 app.use(cors({ 
-    origin: ["https://node-js-react-js-chat-app-wpgy.vercel.app/"],
+    origin: ["https://chatkro-three.vercel.app/"],
     methods: ["POST"],
     credentials:true,
     allowedHeaders: ["Content-Type", "Authorization"],
