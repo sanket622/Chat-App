@@ -5,16 +5,16 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      'react-chat-engine-pretty': 'react-chat-engine-pretty/dist/index.js', // Point to the distribution file
+      'react-chat-engine-pretty': 'react-chat-engine-pretty/dist/index.js', 
     },
   },
   optimizeDeps: {
-    include: ['react-chat-engine-pretty'],  // Pre-bundle for development
+    include: ['react-chat-engine-pretty'],  
   },
   build: {
-    target: 'esnext',  // Ensure the build is targeting modern browsers
+    target: 'esnext',  
     commonjsOptions: {
-      transformMixedEsModules: true,  // Handle mixed ES and CJS modules
+      transformMixedEsModules: true,
     },
   },
 });

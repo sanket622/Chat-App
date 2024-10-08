@@ -12,7 +12,7 @@ const AuthPage = (props) => {
     e.preventDefault();
     axios
       .post("https://node-js-react-js-chat-app.vercel.app/login", { username, secret })
-      .then((r) => props.onAuth({ ...r.data, secret })) // NOTE: over-ride secret
+      .then((r) => props.onAuth({ ...r.data, secret })) 
       .catch((e) => console.log(JSON.stringify(e.response.data)));
   };
 
@@ -26,7 +26,7 @@ const AuthPage = (props) => {
         first_name,
         last_name,
       })
-      .then((r) => props.onAuth({ ...r.data, secret })) // NOTE: over-ride secret
+      .then((r) => props.onAuth({ ...r.data, secret })) 
       .catch((e) => console.log(JSON.stringify(e.response.data)));
   };
 
