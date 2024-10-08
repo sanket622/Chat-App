@@ -6,7 +6,11 @@ import dotenv from 'dotenv'
 const app = express()
 dotenv.config()
 app.use(express.json())
-app.use(cors({ origin: true }))
+app.use(cors({ 
+    origin: ["https://chat-app-two-weld.vercel.app/"],
+    methods:["POST"],
+    credentials:true
+}))
 
 const CHAT_ENGINE_PROJECT_ID = process.env. CHAT_ENGINE_PROJECT_ID
 const CHAT_ENGINE_PRIVATE_KEY = process.env.CHAT_ENGINE_PRIVATE_KEY
