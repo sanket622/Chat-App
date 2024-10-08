@@ -5,7 +5,7 @@ const ChatsPage = (props) => {
   return (
     <div style={{ height: "100vh", width: "100vw" }}>
       <PrettyChatWindow
-        projectId={import.meta.env.VITE_REACT_APP_CHAT_ENGINE_PROJECT_ID} 
+        projectId={import.meta.env.VITE_PROJECT_ID} 
         username={props.user.username} 
         secret={props.user.secret} 
         style={{ height: '100%' }}
