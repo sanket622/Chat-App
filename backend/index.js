@@ -11,7 +11,7 @@ app.use(express.json())
 //     methods: 'GET,POST,PUT,DELETE',
 //     credentials: true, 
 //   }));
-app.use(cors);
+app.use(cors());
 
 const CHAT_ENGINE_PROJECT_ID = process.env. CHAT_ENGINE_PROJECT_ID
 const CHAT_ENGINE_PRIVATE_KEY = process.env.CHAT_ENGINE_PRIVATE_KEY
